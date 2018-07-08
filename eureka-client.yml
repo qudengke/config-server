@@ -5,6 +5,13 @@
 ---
 spring:
   profiles: dev
+  application:
+    name: microservicecloud-dept
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver             # mysql\u9A71\u52A8\u5305
+    url: jdbc:mysql://localhost:3306/org8001             # \u6570\u636E\u5E93\u540D\u79F0
+    username: root
+    password: root
 server:
   port: 8001
 
@@ -15,12 +22,3 @@ eureka:
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #\u8BBF\u95EE\u8DEF\u5F84\u53EF\u4EE5\u663E\u793AIP\u5730\u5740
-
-spring:
-   application:
-    name: microservicecloud-dept
-   datasource:
-    driver-class-name: com.mysql.jdbc.Driver             # mysql\u9A71\u52A8\u5305
-    url: jdbc:mysql://localhost:3306/org8001             # \u6570\u636E\u5E93\u540D\u79F0
-    username: root
-    password: root
