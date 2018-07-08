@@ -1,0 +1,9 @@
+﻿server:
+  port: 9527
+
+zuul:
+  routes:
+    mytest.serviceId: microservicecloud-dept
+    mytest.path: /test/**
+  ignored-services: microservicecloud-dept
+  prefix: /sunlands
